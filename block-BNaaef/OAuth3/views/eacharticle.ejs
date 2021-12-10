@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .img {
+        width: 20%;
+        border-radius: 50%;
+      }
+      .div-2 {
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <% include partials/header %>
+    <main>
+      <div class="div-2">
+        <img class="img" src="/uploads/<%=eacharticle.imageFile%> " alt="" />
+        <h2><%=eacharticle.name %></h2>
+        <h3><%=eacharticle.description %></h3>
+        <p><%=eacharticle.author %></p>
+      </div>
+    </main>
+  </body>
+</html>
